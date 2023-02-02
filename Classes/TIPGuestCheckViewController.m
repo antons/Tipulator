@@ -936,7 +936,7 @@
 
 	[superview addConstraint:[NSLayoutConstraint
 		constraintWithItem:checkNumber
-		attribute:NSLayoutAttributeLeading
+		attribute:NSLayoutAttributeLeft
 		relatedBy:NSLayoutRelationEqual
 		toItem:backgroundView
 		attribute:NSLayoutAttributeLeft
@@ -953,7 +953,7 @@
 		
 	[superview addConstraint:[NSLayoutConstraint
 		constraintWithItem:checkNumberLabel
-		attribute:NSLayoutAttributeLeading
+		attribute:NSLayoutAttributeLeft
 		relatedBy:NSLayoutRelationEqual
 		toItem:checkNumber
 		attribute:NSLayoutAttributeLeft
@@ -970,7 +970,7 @@
 		
 	[superview addConstraint:[NSLayoutConstraint
 		constraintWithItem:checkDate
-		attribute:NSLayoutAttributeLeading
+		attribute:NSLayoutAttributeLeft
 		relatedBy:NSLayoutRelationEqual
 		toItem:superview
 		attribute:NSLayoutAttributeLeft
@@ -987,7 +987,7 @@
 		
 	[superview addConstraint:[NSLayoutConstraint
 		constraintWithItem:checkDateLabel
-		attribute:NSLayoutAttributeLeading
+		attribute:NSLayoutAttributeLeft
 		relatedBy:NSLayoutRelationEqual
 		toItem:checkDate
 		attribute:NSLayoutAttributeLeft
