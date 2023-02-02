@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		EC02999816655590007C0945 /* NSBundle+Localization.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02999716655590007C0945 /* NSBundle+Localization.m */; };
 		EC02999E166555C3007C0945 /* NSArray+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = EC02999D166555C3007C0945 /* NSArray+Additions.m */; };
-		EC10C41016BD620800607671 /* libHockeySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC10C40916BD61D300607671 /* libHockeySDK.a */; };
-		EC10C41216BD621C00607671 /* CrashReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC10C41116BD621C00607671 /* CrashReporter.framework */; };
-		EC10C41316BD624400607671 /* HockeySDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC10C40B16BD61D300607671 /* HockeySDKResources.bundle */; };
 		EC17E23116655C8D001C17B1 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = EC17E22F16655C8D001C17B1 /* Localizable.strings */; };
 		EC24496717451FE2004DCB1E /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC24496617451FE2004DCB1E /* Security.framework */; };
 		EC2D3FE8166A64DE005A5C78 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE7C27D16544C7500F23D76 /* background.png */; };
@@ -104,44 +101,11 @@
 		ECF8F8BD166551C2003EE159 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ECF8F8B9166551C2003EE159 /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		EC10C40816BD61D300607671 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1E5954F215B6F24A00A03429;
-			remoteInfo = HockeySDK;
-		};
-		EC10C40A16BD61D300607671 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1E59550A15B6F45800A03429;
-			remoteInfo = HockeySDKResources;
-		};
-		EC10C40C16BD61FC00607671 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E5954CB15B6F24A00A03429;
-			remoteInfo = HockeySDK;
-		};
-		EC10C40E16BD620200607671 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 1E59550915B6F45800A03429;
-			remoteInfo = HockeySDKResources;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		EC02999616655590007C0945 /* NSBundle+Localization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Localization.h"; sourceTree = "<group>"; };
 		EC02999716655590007C0945 /* NSBundle+Localization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Localization.m"; sourceTree = "<group>"; };
 		EC02999C166555C3007C0945 /* NSArray+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Additions.h"; sourceTree = "<group>"; };
 		EC02999D166555C3007C0945 /* NSArray+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Additions.m"; sourceTree = "<group>"; };
-		EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = HockeySDK.xcodeproj; path = Vendor/HockeySDK/Support/HockeySDK.xcodeproj; sourceTree = SOURCE_ROOT; };
-		EC10C41116BD621C00607671 /* CrashReporter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CrashReporter.framework; path = Vendor/HockeySDK/Vendor/CrashReporter.framework; sourceTree = "<group>"; };
 		EC10C41416BD629800607671 /* Tipulator.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Tipulator.xcconfig; sourceTree = "<group>"; };
 		EC17E23016655C8D001C17B1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		EC17E23316655C93001C17B1 /* en_GB */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en_GB; path = en_GB.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -280,23 +244,12 @@
 				EC6A5A29165D681400E2D266 /* AVFoundation.framework in Frameworks */,
 				EC9648391668CE5300CF4157 /* AudioToolbox.framework in Frameworks */,
 				EC24496717451FE2004DCB1E /* Security.framework in Frameworks */,
-				EC10C41216BD621C00607671 /* CrashReporter.framework in Frameworks */,
-				EC10C41016BD620800607671 /* libHockeySDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		EC10C40216BD61D200607671 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EC10C40916BD61D300607671 /* libHockeySDK.a */,
-				EC10C40B16BD61D300607671 /* HockeySDKResources.bundle */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		EC6F4C571657E1BE004090A2 /* Numeric Keypad */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,7 +392,6 @@
 				ECE7C23B165444EF00F23D76 /* CoreGraphics.framework */,
 				ECBD2D5C165BB19A002D8D53 /* QuartzCore.framework */,
 				EC24496617451FE2004DCB1E /* Security.framework */,
-				EC10C41116BD621C00607671 /* CrashReporter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -567,7 +519,6 @@
 		ECE7C2761654482000F23D76 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
-				EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */,
 				ECBA75181656C9950088C47F /* Image Styles */,
 			);
 			name = Foundation;
@@ -615,8 +566,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				EC10C40F16BD620200607671 /* PBXTargetDependency */,
-				EC10C40D16BD61FC00607671 /* PBXTargetDependency */,
 			);
 			name = Tipulator;
 			productName = Tipulator;
@@ -638,6 +587,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				en_GB,
 				en_CA,
@@ -645,35 +595,12 @@
 			mainGroup = ECE7C228165444EF00F23D76;
 			productRefGroup = ECE7C234165444EF00F23D76 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = EC10C40216BD61D200607671 /* Products */;
-					ProjectRef = EC10C40116BD61D200607671 /* HockeySDK.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				ECE7C232165444EF00F23D76 /* Tipulator */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		EC10C40916BD61D300607671 /* libHockeySDK.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libHockeySDK.a;
-			remoteRef = EC10C40816BD61D300607671 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		EC10C40B16BD61D300607671 /* HockeySDKResources.bundle */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = HockeySDKResources.bundle;
-			remoteRef = EC10C40A16BD61D300607671 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		ECE7C231165444EF00F23D76 /* Resources */ = {
@@ -739,7 +666,6 @@
 				EC2D3FEA166A64DE005A5C78 /* background-568h@2x.png in Resources */,
 				ECCA73D61679FB2E0051A54D /* clear-indicator.png in Resources */,
 				ECCA73D71679FB2E0051A54D /* clear-indicator@2x.png in Resources */,
-				EC10C41316BD624400607671 /* HockeySDKResources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -780,19 +706,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		EC10C40D16BD61FC00607671 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HockeySDK;
-			targetProxy = EC10C40C16BD61FC00607671 /* PBXContainerItemProxy */;
-		};
-		EC10C40F16BD620200607671 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HockeySDKResources;
-			targetProxy = EC10C40E16BD620200607671 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		EC17E22F16655C8D001C17B1 /* Localizable.strings */ = {

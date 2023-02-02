@@ -10,9 +10,8 @@
 #import "TIPGuestCheckViewController.h"
 
 #import <AVFoundation/AVFoundation.h>
-#import "../Vendor/HockeySDK/Classes/HockeySDK.h"
 
-@interface Tipulator()<BITHockeyManagerDelegate, BITUpdateManagerDelegate, BITCrashManagerDelegate>
+@interface Tipulator()
 
 @property(nonatomic, strong) TIPGuestCheckViewController* guestCheckViewController;
 
@@ -40,15 +39,6 @@
 }
 
 - (BOOL)application:(UIApplication*)application didFinishLaunchingWithOptions:(NSDictionary*)launchOptions {
-	[[BITHockeyManager sharedHockeyManager]
-		configureWithBetaIdentifier:@"39f05c82ec9f434d3686c786e14a1448"
-		liveIdentifier:@"8641402b9f68736ebfb2fb7fa94fb5de"
-        delegate:self];
-	[[BITHockeyManager sharedHockeyManager] startManager];
-
-	[[[BITHockeyManager sharedHockeyManager]
-		crashManager] setCrashManagerStatus:BITCrashManagerStatusAutoSend];
-
 	UIWindow* window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     window.backgroundColor = [UIColor blackColor];
@@ -81,16 +71,6 @@
 }
 
 - (void)application:(UIApplication*)application didDecodeRestorableStateWithCoder:(NSCoder*)coder {
-}
-
-#pragma mark - BITUpdateManagerDelegate
-- (NSString*)customDeviceIdentifierForUpdateManager:(BITUpdateManager*)updateManager {
-#ifndef CONFIGURATION_Distribution
-	if([[UIDevice currentDevice] respondsToSelector:@selector(uniqueIdentifier)]) {
-		return [[UIDevice currentDevice] performSelector:@selector(uniqueIdentifier)];
-	}
-#endif
-	return nil;
 }
 
 #pragma mark - Private
